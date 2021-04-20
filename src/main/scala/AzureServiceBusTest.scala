@@ -5,8 +5,8 @@ import util.control.Breaks._
 
 object AzureServiceBusTest extends App {
 
-    val connectionString = "Endpoint=sb://dd-test-namespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=5MSHpsr/qPRU6krhXa5AM5HT6kAow5uAEAha6sObEYo="
-    val queueName = "dd-test-queue"
+    val connectionString = ""
+    val queueName = ""
 
     private def sendMessage(): Unit = { // create a Service Bus Sender client for the queue
       val senderClient = new ServiceBusClientBuilder().connectionString(connectionString).sender.queueName(queueName).buildClient
